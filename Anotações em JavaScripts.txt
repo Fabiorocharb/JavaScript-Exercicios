@@ -1,0 +1,115 @@
+Tudo sobre JavaScripts
+
+Cliente x Servidor 
+Cliente são usuarios 
+Servidor são lugares onde ficam armazenados os dados.
+
+HTML -> Conteúdo
+CSS -> Estilo
+JavaScript -> Interação
+
+JavaScripts- 
+comandos 
+Window.alert('')
+window.confirm('')
+window.prompt('')
+
+// uma unica linha
+/*  mais de uma linha */
+
+sinal = recebe 
+sinal = null //vazia
+
+No JV moderno, além de ultilizar a palavra VAR,também podemos usar LET.
+
+algumas regras /* Podem começar com letra,$ ou _
+                  Não podem começar com números
+                  É possível usar letras ou números
+                  É possível usar acentos e símbolos
+                  Não podem conter espaços         
+                  Não podem ser palavras reservadas */
+
+Dicas
+               /* Maiúsculas e minúsculas fazem diferença
+                  Tente escolher nomes coerentes para as variáveis
+                  Evite se tornar um 'programador alfabeto'ou um 'programador contador'
+
+5 18 -12 
+0.5  -15.9  3.14 8.0    são chamados de number   Tem 2 tipos importantes infinity nan
+
+"Google"
+'JavaScript'       são chamados de string
+'Maria'           
+
+true   false   são chamados de boolen
+
+Data Types
+  Number   Infinity  NaN
+  string
+  boolean
+  null
+  underfined
+  object          Array
+  function
+        
+Convertendo string > numero
+Number.parseInt(n) inteiro
+Number.parseFloat(n) Real
+Pode colocar apenas Number
+
+Convertendo Numero > String
+String(n)
+n.toString()
+
+Terminal do Node Ctrl + L limpa o terminal 
+
+Tambem pode ser feito dessa  forma   ${variavel}
+`O aluno ${nome} com idade ${idade} tirou a nota ${nota}`
+// s.length  quantos caracteres a string tem
+// s.tpUpperCase()     joga tudo para as letras 'MAIÚSCULAS'
+// s.toLowerCase()    Joga tudo para as letras 'MINÚSCULAS'
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+Para dizer o salario em PT_BR reais
+
+COMO CALCULAR ARITMÉTICOS
+5 + 2 = 7
+5 - 2 = 3 
+5 * 2 = 10
+5 / 2 = 2.5
+5 % 2 = 1  resto da divisão 5/2
+5 ** 2 = 25  ou seja 5X5=25
+
+Ordem de precedência                         relacionais                     identidade                lógicos              
+()                                           5 > 2 = true                    5 == 5 = true             ! - negação         
+**                                           7 < 4 = false                   5 == '5' = true           && - Conjunção - so se for as 2 verdadeiras
+* / %                                        8 >= 8 = true                   5 === '5' = false         || disjunção - Apenas 1 verdadeiro 
++ -                                          9 <=7  = false                  5 === 5 = true
+                                             5 == 5 = true
+Auto-atribuições                             4 != 4 = false
+var n = 3
+n = n + 4
+
+Precedência                     Ternário
+()  **   / ...                  teste ? true : false
+> < >= ...                      
+!
+&&
+||
+
+Estudo com o DOM
+
+aperte Ctrl+ shift+ p = open with live in server
+
+O que é dom? Document Object Model
+
+Arvore DOM 
+
+window- location- document - history
+                   html
+                head - body
+          
+
+
+
+

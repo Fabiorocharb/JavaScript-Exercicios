@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JavaScript</title>
+    <style> /* Css sempre apos o titulo */
+        body { 
+            background-color: aquamarine; /*Fundo da tela */ 
+            color: blue; /*cor da letra*/
+            font: normal 15pt arial; /*tamanho da letra */
+        }
+        h1 {
+            color: black;
+        }
+        h2 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo !</h1>
+    <h2>Já me livrei da maldição</h2>
+    <script>
+      var n1 = Number(window.prompt('Digite um número: ')) // string
+      var n2 = Number(window.prompt('Digite outro número: ')) // string
+      var s = n1 + n2
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
+      // (string + string) paraconcatenação 
+      //(number + number) para adição
+      // s.length  quantos caracteres a string tem
+      // s.tpUpperCase()     joga tudo para as letras 'MAIÚSCULAS'
+      //s.toLowerCase()    Joga tudo para as letras 'MINÚSCULAS'
+
+    </script>
+</body>
+</html>
