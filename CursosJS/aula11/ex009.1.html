@@ -7,7 +7,14 @@
     <title>Estrageiro ou Brasileiro</title>
     <style>
        body {
-        background-color: rgba(23, 144, 192, 0.774); /*cor do fundo*/
+        background-color: rgb(253, 155, 172); /*cor de Fundo*/
+        background-image: url(Passaporte3.png); /*Imagem de fundo */
+        background-repeat: no-repeat; /*Para não repetir*/
+        background-position: top; /*posição da imagem*/
+        min-width: 300px;
+        margin: auto;
+        max-width: 1000px;
+        top: 100px;
         text-align: center; /*Deixando o testo no centro*/
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        }
@@ -20,10 +27,18 @@
         box-shadow: 5px 5px 10px rgba(0,0,0,0.363);
        }
        footer{
-        font: normal 15pt Franklin Gothic medium; /*Tamanho da letra e fonte*/
+        font: normal 12pt Franklin Gothic medium; /*Tamanho da letra e fonte*/
+        color: black;
+        position: relative; /*posição da rodape*/
+        min-width: 300px;
+        margin: auto;
+        max-width: 1000px;
+        top: 470px;
        }
+
     </style>
 </head>
+
 <body>
     <header>
     <h1>Sistema de passaporte</h1>
@@ -42,19 +57,22 @@ function verificar () {
     var país = window.document.querySelector(`input#txtp`)
     var res = window.document.querySelector(`div#res`)
     var nacionalidade = String(país.value)
-
+    
     res.innerHTML = `<p>Você digitou <strong>${nacionalidade}</strong> e, portanto, é </p>`
 
         if(nacionalidade == `Brasil`){
             res.innerHTML += `<p>um cidadão <strong>Brasileiro</strong>!</p>`
+           
         } 
         else {
-            res.innerHTML += `<p> um cidadão <strong>Estrangeiro</strong>!</p>`   
+            res.innerHTML += `<p> um cidadão <strong>Estrangeiro</strong>!</p>`
+          
         }   
     }
+   
    </script>
-<footer>
-    <p>&copy; Fabiorocha</p>
+<footer id="rodape">
+    <p>Copyright &nbsp;&nbsp;  &copy;2022 &nbsp;&nbsp;&nbsp;  Fabiorocha</p>
 </footer>
 </body>
 </html>
