@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de horas</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var dia = prompt(`Digite quantas horas tem o dia:`)
+        var trabalho = prompt(`Digite quantas horas você trabalha:`)
+        var almoco = prompt(`Digite quantas horas voce tem de almoco:`)
+
+        var horasDisponivel = diminua(dia, trabalho, almoco);
+
+        alert(`Você tem:` + horasDisponivel);
+
+        function diminua(dia, trabalho, almoco){
+            var horas = 0;
+            horas = dia - trabalho - almoco;
+            return horas;
+        }
+    </script>
+</body>
+</html>
