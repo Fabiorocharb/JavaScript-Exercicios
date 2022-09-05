@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Javascript</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        var numero1 = prompt("insira o primeiro número: "); // prompt para o usuario digitar
+        var numero2 = prompt("insira o segundo número: "); // armazendando dados
+
+        var resultadoDivisao = divida(numero1, numero2); //divida é a função
+
+        alert(`O resultado da divisão é igual a:` + resultadoDivisao);
+
+        function divida(numero1, numero2){
+            var resultado = 0;
+            resultado = numero1 / numero2;
+            return resultado
+        }
+    </script>
+</body>
+</html>
