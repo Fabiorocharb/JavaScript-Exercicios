@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrageiro ou Brasileiro</title>
+    <style>
+       body {
+        background-color: rgba(23, 144, 192, 0.774); /*cor do fundo*/
+        text-align: center; /*Deixando o testo no centro*/
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       section {
+        background-color: rgba(255, 255, 255, 0.692);
+        border-radius: 10px; /* Bordas do quadrado*/
+        padding: 20px; /* altura */
+        width: 50%; /*largura*/
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.363);
+       }
+       footer{
+        font: normal 15pt Franklin Gothic medium; /*Tamanho da letra e fonte*/
+       }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Sistema de passaporte</h1>
+    </header>
+
+    <section>
+    <p>Digite o país que voce mora <input type="text"  id="txtp" placeholder="  País com letra maiúscula">
+    <input type="button" value="Verificar" id="verificar" onclick="verificar()">
+        <div id="res">
+
+        </div>
+    </section>    
+   <script> 
+      
+function verificar () {
+    var país = window.document.querySelector(`input#txtp`)
+    var res = window.document.querySelector(`div#res`)
+    var nacionalidade = String(país.value)
+
+    res.innerHTML = `<p>Você digitou <strong>${nacionalidade}</strong> e, portanto, é </p>`
+
+        if(nacionalidade == `Brasil`){
+            res.innerHTML += `<p>um cidadão <strong>Brasileiro</strong>!</p>`
+        } 
+        else {
+            res.innerHTML += `<p> um cidadão <strong>Estrangeiro</strong>!</p>`   
+        }   
+    }
+   </script>
+<footer>
+    <p>&copy; Fabiorocha</p>
+</footer>
+</body>
+</html>

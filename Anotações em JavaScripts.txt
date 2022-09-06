@@ -109,7 +109,27 @@ window- location- document - history
                    html
                 head - body
           
+Condições                       if(condição) {        if(condição){
+if(condição) {                          true               true   
+     true                        } simples            } else {     
+}                                                           false }
+else{
+     false
+}
 
+Condições múltiplas
+switch (expressão) {
+case valor 1:
 
+break
+case valor 2:
 
+break
+case valor 3:
+
+break
+default:
+
+break
+}
 
