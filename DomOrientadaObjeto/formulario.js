@@ -5,7 +5,6 @@ function pegarDados(evento) {
   const dados = {};
 
   [...formulario.querySelectorAll("input")].forEach((tag) => {
-    console.log(tag);
     dados[tag.name] = tag.value;
   });
   console.log(dados);
