@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button type="button">Não clique !</button>
+    <button type="button" id="pode">clique !</button>
+    <script>
+      // eventos de Janela
+      window.addEventListener("load", () => {
+        console.log("window", "load");
+      });
+
+      window.addEventListener("resize", (evento) => {
+        console.log(window.innerWidth);
+        console.log(window.outerWidth);
+      });
+
+      window.addEventListener("focus", () => {
+        console.log("Você esta aqui na janela!");
+      });
+
+      window.addEventListener("blur", () => {
+        console.log("Você saiu da janela!");
+      });
+
+      // ---------------------------------
+
+      // Eventos de Mouse
+
+      const botoes = document.querySelectorAll("button");
+
+      [...botoes].forEach((botao) => {
+        botao.addEventListener("mouseenter", (evento) => {
+          console.log(evento.type);
+        });
+
+        botao.addEventListener("mouseleave", (evento) => {
+          console.log(evento.type);
+        });
+
+        botao.addEventListener("mousemove", (evento) => {
+          console.log(evento.type);
+        });
+
+        botao.addEventListener("mousedown", (evento) => {
+          console.log(evento.type);
+        });
+
+        botao.addEventListener("mouseup", (evento) => {
+          console.log(evento.type);
+        });
+
+        botao.addEventListener("click", (evento) => {
+          console.log(evento.type);
+        });
+
+        botao.addEventListener("contextmenu", (evento) => {
+          evento.preventDefault();
+          switch (evento.target.id) {
+            case "pode":
+              console.log("😁");
+              break;
+            default:
+              console.log("Falei para não clicar! 🤣🤣🤣");
+          }
+
+          console.log(evento);
+        });
+      });
+    </script>
+  </body>
+</html>
