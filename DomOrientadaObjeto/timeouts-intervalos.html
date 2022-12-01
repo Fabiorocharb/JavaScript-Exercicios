@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>0</h1>
+    <button type="button" id="a">Desligar Interval</button>
+    <button type="button" id="b">Cancelar Timeout</button>
+    <script>
+      let contador = 0;
+
+      const idInterval = setInterval(() => {
+        console.log(++contador);
+        document.querySelector("h1").innerHTML = contador;
+      }, 1000);
+
+      document
+        .querySelector("button#a")
+        .addEventListener("click", () => clearInterval(idInterval));
+
+        console.log(idInterval);
+
+      const idTimeout = setTimeout(() => {
+        document.querySelector("h1").style.color = "blue";
+        console.log("seja bem vindo!");
+        clearInterval(idInterval);
+      }, 10000);
+
+      document
+        .querySelector("button#b")
+        .addEventListener("click", () => clearTimeout(idTimeout));
+    </script>
+  </body>
+</html>
